@@ -27,18 +27,58 @@ const Order = () => {
   </TabList>
  
   <TabPanel>
-    {
+ <div className='grid md:grid-cols-3 gap-10'>
+ {
       salad.map(item=><FoodCard
         key={item._id}
         item={item}
         ></FoodCard>)
     }
+ </div>
 
   </TabPanel>
-  <TabPanel></TabPanel>
-  <TabPanel></TabPanel>
-  <TabPanel></TabPanel>
-  <TabPanel></TabPanel>
+  <TabPanel>
+  <div className='grid md:grid-cols-3 gap-10'>
+ {
+      pizza.map(item=><FoodCard
+        key={item._id}
+        item={item}
+        ></FoodCard>)
+    }
+ </div>
+
+  </TabPanel>
+  <TabPanel>
+  <div className='grid md:grid-cols-3 gap-10'>
+ {
+      soup.map(item=><FoodCard
+        key={item._id}
+        item={item}
+        ></FoodCard>)
+    }
+ </div>
+
+  </TabPanel>
+  <TabPanel>
+  <div className='grid md:grid-cols-3 gap-10'>
+ {
+      desserts.map(item=><FoodCard
+        key={item._id}
+        item={item}
+        ></FoodCard>)
+    }
+ </div>
+  </TabPanel>
+  <TabPanel>
+  <div className='grid md:grid-cols-3 gap-10'>
+ {
+      offered.map(item=><FoodCard
+        key={item._id}
+        item={item}
+        ></FoodCard>)
+    }
+ </div>
+  </TabPanel>
 </Tabs> 
    
         </div>
